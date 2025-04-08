@@ -1,0 +1,38 @@
+<configuration>
+    <!-- Define the root queue and its child queues -->
+    <property>
+        <name>yarn.scheduler.capacity.root.queues</name>
+        <value>default</value>
+    </property>
+    
+    <!-- Define the capacity of the root queue -->
+    <property>
+        <name>yarn.scheduler.capacity.root.capacity</name>
+        <value>100</value>
+    </property>
+
+    <!-- Define the capacity for the default queue under root -->
+    <property>
+        <name>yarn.scheduler.capacity.root.default.capacity</name>
+        <value>100</value>
+    </property>
+
+    <!-- Maximum capacity for the default queue -->
+    <property>
+        <name>yarn.scheduler.capacity.root.default.maximum-capacity</name>
+        <value>100</value>
+    </property>
+
+    <!-- User limit factor for the default queue -->
+    <property>
+        <name>yarn.scheduler.capacity.root.default.user-limit-factor</name>
+        <value>1</value>
+    </property>
+
+    <!-- Queue configuration for a child queue (default queue) -->
+    <property>
+        <name>yarn.scheduler.capacity.root.default.state</name>
+        <value>RUNNING</value>
+    </property>
+    
+</configuration>
